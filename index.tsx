@@ -58,8 +58,8 @@ interface Props {
 
     onBackdropPress?: (...args: any) => any,
     pickerButtonOnPress: (item: CountryItem) => any,
-    itemTemplate?: (props: ItemTemplateProps) => JSX.Element,
-    ListHeaderComponent?: (props: ListHeaderComponentProps) => JSX.Element,
+    itemTemplate?: (props: ItemTemplateProps) => any,
+    ListHeaderComponent?: (props: ListHeaderComponentProps) => any,
     onRequestClose?: (...args: any) => any,
 
     lang: string,
@@ -339,8 +339,8 @@ interface CountryListProps {
     popularCountries?: string[],
     showOnly?: string[],
 
-    ListHeaderComponent?: (props: ListHeaderComponentProps) => JSX.Element,
-    itemTemplate?: (props: ItemTemplateProps) => JSX.Element,
+    ListHeaderComponent?: (props: ListHeaderComponentProps) => any,
+    itemTemplate?: (props: ItemTemplateProps) => any,
     pickerButtonOnPress: (item: CountryItem) => any,
 
     style?: Style,
